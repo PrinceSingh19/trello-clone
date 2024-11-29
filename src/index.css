@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide the scrollbar but allow scrolling */
+.scrollable {
+	overflow: auto; /* Enable scrolling */
+	scrollbar-width: thin; /* For Firefox */
+	scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+.scrollable::-webkit-scrollbar {
+	width: 0px; /* Remove scrollbar width */
+	height: 0px; /* Remove scrollbar height */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+	background: transparent; /* Remove the thumb */
+}
+
+.scrollable::-webkit-scrollbar-track {
+	background: transparent; /* Remove the track */
+}
